@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Luxury Beachfront Villa | Lux-BNB</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="nav-section">
+      <div class="nav-container">
+        <div class="logo">
+          <img src="images/Lux_BnB_logo_transparent.png" alt="Lux-BNB" />
+        </div>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#listings">Listings</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button class="menu-toggle"><i class="fas fa-bars"></i></button>
+      </div>
+    </nav>
+
+    <main class="property-details">
+      <div class="property-gallery">
+        <div class="main-image">
+          <img src="images/beach1.jpg" alt="Main view" class="active" />
+        </div>
+        <div class="thumbnail-grid">
+          <img src="images/beach2.jpg" alt="Thumbnail 1" />
+          <img src="images/beach3.jpg" alt="Thumbnail 2" />
+          <img src="images/beach4.jpg" alt="Thumbnail 3" />
+        </div>
+      </div>
+      <div class="property-gallery">
+        <div class="main-image">
+          <img src="images/Safari1.jpg" alt="Main view" class="active" />
+        </div>
+        <div class="thumbnail-grid">
+          <img src="images/Safari.2.webp" alt="Thumbnail 1" />
+          <img src="images/safari3.webp" alt="Thumbnail 2" />
+          <img src="images/safari4.webp" alt="Thumnail 3" />
+        </div>
+      </div>
+      <div class="property-gallery">
+        <div class="main-image">
+          <img src="images/urban3.jpg" alt="Main view" class="active" />
+        </div>
+        <div class="thumbnail-grid">
+          <img src="images/urban1.jpg" alt="Thumbnail 1" />
+          <img src="images/urban2.jpg" alt="Thumbnail 2" />
+          <img src="images/urban4.jpg" alt="Thumbnail 4" />
+        </div>
+      </div>
+
+      <div class="property-content">
+        <div class="property-header">
+          <h1 class="property-title">Ocean Pearl Villa</h1>
+          <div class="property-rating">
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <span class="reviews">48 reviews</span>
+          </div>
+          <div class="property-location">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Diani Beach, Kenya</span>
+          </div>
+        </div>
+
+        <div class="property-highlights">
+          <div class="highlight-card">
+            <i class="fas fa-umbrella-beach"></i>
+            <h3>Beachfront</h3>
+            <p>Private beach access</p>
+          </div>
+          <div class="highlight-card">
+            <i class="fas fa-swimming-pool"></i>
+            <h3>Infinity Pool</h3>
+            <p>Heated saltwater pool</p>
+          </div>
+          <div class="highlight-card">
+            <i class="fas fa-concierge-bell"></i>
+            <h3>Full Service</h3>
+            <p>24/7 concierge</p>
+          </div>
+        </div>
+
+        <div class="property-description">
+          <h2>About This Property</h2>
+          <p>
+            Experience unparalleled luxury in this 5-bedroom beachfront villa
+            featuring contemporary Swahili design blended with modern amenities.
+            Wake up to the sound of waves in your private master suite with
+            panoramic ocean views.
+          </p>
+        </div>
+
+        <div class="booking-widget">
+          <div class="price-box">
+            <span class="price">$950</span>
+            <span class="per-night">/ night</span>
+          </div>
+          <form class="booking-form">
+            <div class="date-picker">
+              <div class="input-group">
+                <label for="checkin"
+                  ><i class="fas fa-calendar-alt"></i> Check-in</label
+                >
+                <input type="date" id="checkin" required />
+              </div>
+              <div class="input-group">
+                <label for="checkout"
+                  ><i class="fas fa-calendar-alt"></i> Check-out</label
+                >
+                <input type="date" id="checkout" required />
+              </div>
+            </div>
+            <div class="guests-selector">
+              <label><i class="fas fa-user-friends"></i> Guests</label>
+              <select id="guests">
+                <option>1 Guest</option>
+                <option>2 Guests</option>
+                <option>3 Guests</option>
+                <option>4 Guests</option>
+              </select>
+            </div>
+            <button type="submit" class="cta-book">
+              <span>Book Now</span>
+              <i class="fas fa-arrow-right"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

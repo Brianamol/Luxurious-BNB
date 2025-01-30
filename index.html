@@ -62,42 +62,45 @@
     <section id="listings" class="listings-section">
       <h2 class="section-title">Featured Property Types</h2>
       <div class="property-types-grid">
-        <!-- Beach Villas Card -->
-        <div
-          class="property-card"
-          data-type="beach"
-          data-images="images/umbrella-chair-around-beautiful-luxury-swimming-pool.jpg, images/swimming-pool.jpg, images/luxury-holiday-home.jpg, images/rocks-restaurant-beach-low-tide-pingwe-zanzibar-tanzania.jpg"
-        >
-          <div class="property-images"></div>
+        <div class="property-card" data-id="1" data-type="beach">
+          <div class="property-images">
+            <img src="images/beach1.jpg" alt="Beach Villa">
+            <img src="images/beach2.jpg" alt="Beach Villa">
+          </div>
           <div class="property-info">
             <h3>Beachfront Villas</h3>
             <p>Luxury coastal living</p>
+            <div class="card-footer">
+              <span class="price">From $950/night</span>
+              <button class="explore-btn">Explore</button>
+            </div>
           </div>
         </div>
-
-        <!-- Safari Lodges Card -->
-        <div
-          class="property-card"
-          data-type="safari"
-          data-images="images/safari1.webp,images/safari2.webp,images/safari3.webp,images/safari4.webp"
-        >
-          <div class="property-images"></div>
+        <div class="property-card" data-id="2" data-type="safari">
+          <div class="property-images">
+            <img src="images/Safari1.jpg" alt="safari lodge">
+            <img src="images/safari4.webp" alt="safari lodge">
+          </div>
           <div class="property-info">
             <h3>Safari Lodges</h3>
             <p>Wilderness experiences</p>
+            <div class="card-footer">
+              <span class="price">From $100/night</span>
+              <button class="explore-btn">Explore</button>
+            </div>
           </div>
         </div>
-
-        <!-- Urban Apartments Card -->
-        <div
-          class="property-card"
-          data-type="urban"
-          data-images="images/urban1.jpg,images/urban2.jpg,images/urban3.jpg"
-        >
-          <div class="property-images"></div>
+        <div class="property-card" data-id="3" data-type="urban">
+          <div class="property-images">
+            <img src="images/urban1.jpg" alt="">
+          </div>
           <div class="property-info">
             <h3>Urban Residences</h3>
             <p>City center luxury</p>
+            <div class="card-footer">
+              <span class="price">From $200/night</span>
+              <button class="explore-btn">Explore</button>
+            </div>
           </div>
         </div>
       </div>
@@ -108,7 +111,6 @@
         <p class="section-subtitle">Where African Opulence Meets Modern Indulgence</p>
       </div>
       <div class="experience-grid">
-        <!-- Floating Safari Card -->
         <div class="experience-card safari-card">
           <div class="card-hoverlayer"></div>
           <div class="card-content">
@@ -127,7 +129,6 @@
             </button>
           </div>
         </div>
-        <!-- Urban Oasis Card -->
         <div class="experience-card urban-card">
           <div class="card-hoverlayer"></div>
           <div class="card-content">
@@ -146,7 +147,6 @@
             </button>
           </div>
         </div>
-        <!-- Coastal Chroma Card -->
         <div class="experience-card coastal-card">
           <div class="card-hoverlayer"></div>
           <div class="card-content">
@@ -178,9 +178,7 @@
     <section class="testimonials-section">
       <div class="testimony-portal">
         <div class="hologram-container">
-          <!-- Holographic Projection Effect -->
           <div class="hologram-grid">
-            <!-- Testimonial 1 - Floating Safari Review -->
             <div class="hologram-card" data-sentiment="ecstatic">
               <div class="hologram-header">
                 <div class="guest-avatar" style="background-image: url('images/safari-guest.jpg')"></div>
@@ -201,7 +199,6 @@
               </div>
               <div class="ambient-video" data-location="masai-mara"></div>
             </div>
-            <!-- Testimonial 2 - Neural Network Generated Praise -->
             <div class="hologram-card" data-sentiment="awe">
               <div class="hologram-header">
                 <div class="neural-avatar">
@@ -224,7 +221,6 @@
             </div>
           </div>
         </div>
-        <!-- Hologram Controls -->
         <div class="hologram-interface">
           <div class="neuro-slider">
             <div class="slider-handle"></div>
@@ -239,10 +235,7 @@
     </section>
     <footer id="contact" class="footer-section">
       <div class="cyber-gateway">
-        <!-- Holographic Social Matrix -->
         <div class="social-matrix">
-          
-          <!-- Instagram Quantum Feed -->
           <div class="hologram-column instagram-realm">
             <div class="hologram-header">
               <i class="fas fa-infinity"></i>
@@ -265,8 +258,61 @@
               </div>
             </div>
           </div>
+          
+<div class="hologram-column contact-realm">
+  <div class="hologram-header">
+    <i class="fas fa-comment-dots"></i>
+    <h3>CONTACT<span class="protocol">//quantum</span></h3>
+  </div>
+  
+  <div class="quantum-contact">
+    <div class="contact-grid">
+      <form class="contact-form">
+        <div class="input-hologram">
+          <input type="text" id="name" required>
+          <label for="name"><i class="fas fa-user-astronaut"></i>Your Name</label>
+          <div class="hologram-underline"></div>
+        </div>
+        
+        <div class="input-hologram">
+          <input type="email" id="email" required>
+          <label for="email"><i class="fas fa-at"></i>Quantum Email</label>
+          <div class="hologram-underline"></div>
+        </div>
+        
+        <div class="input-hologram">
+          <textarea id="message" required></textarea>
+          <label for="message"><i class="fas fa-comment-medical"></i>Message Pulse</label>
+          <div class="hologram-underline"></div>
+        </div>
+        
+        <button type="submit" class="quantum-send">
+          Transmit Message
+          <div class="signal-wave"></div>
+        </button>
+      </form>
+      <div class="contact-particles">
+        <div class="particle particle-1"></div>
+        <div class="particle particle-2"></div>
+        <div class="particle particle-3"></div>
+        <div class="contact-info">
+          <p><i class="fas fa-space-shuttle"></i>Nairobi Orbital Station</p>
+          <p><i class="fas fa-satellite"></i>connect@luxbnb.space</p>
+          <p><i class="fas fa-phone-volume"></i>+254 700 LUXURY</p>
+        </div>
+        <div class="confirmation-message">
+           <i class="fas fa-check-circle"></i>
+           <p class="confirmation-text"></p>
+        </div>
+        <div class="error-message">
+          <i class="fas fa-exclamation-triangle"></i>
+          <p class="error-text"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
     
-          <!-- Twitter Neural Stream -->
           <div class="hologram-column twitter-realm">
             <div class="hologram-header">
               <i class="fas fa-brain"></i>
@@ -293,8 +339,6 @@
               </div>
             </div>
           </div>
-    
-          <!-- Crypto-Luxury Exchange -->
           <div class="hologram-column crypto-realm">
             <div class="hologram-header">
               <i class="fas fa-coins"></i>
@@ -315,42 +359,57 @@
             </div>
           </div>
         </div>
-    
-        <!-- Digital Concierge -->
-        <div class="concierge-hologram">
-          <div class="ai-avatar"></div>
-          <div class="concierge-interface">
-            <div class="neuro-input">
-              <input type="text" placeholder="Request the impossible..." class="desire-input">
-              <button class="quantum-send"><i class="fas fa-paper-plane"></i></button>
-            </div>
-            <div class="personality-selector">
-              <span class="personality-option" data-ai="shaman">🎭 Digital Shaman</span>
-              <span class="personality-option" data-ai="butler">🤖 Art Deco Butler</span>
-              <span class="personality-option" data-ai="philosopher">🦉 Existential Guide</span>
-            </div>
+        <div class="quantum-social">
+         <h4>Our Connections</h4>
+           <div class="social-portal">
+            <a href="https://instagram.com/luxbnb" 
+               target="_blank" 
+               class="social-wormhole"
+               aria-label="Instagram Hypergate">
+            <i class="fab fa-instagram"></i>
+           <div class="wormhole-effect"></div>
+           </a>
+           <a href="https://twitter.com/luxbnb" 
+               target="_blank" 
+               class="social-wormhole"
+               aria-label="Twitter Nebula">
+            <i class="fab fa-x-twitter"></i>
+           <div class="wormhole-effect"></div>
+           </a>
+           <a href="https://facebook.com/luxbnb" 
+               target="_blank" 
+               class="social-wormhole"
+               aria-label="Facebook Dimension">
+               <i class="fab fa-facebook-f"></i>
+               <div class="wormhole-effect"></div>
+           </a>
+           <a href="https://linkedin.com/company/luxbnb" 
+               target="_blank" 
+               class="social-wormhole"
+               aria-label="LinkedIn Portal">
+            <i class="fab fa-linkedin-in"></i>
+            <div class="wormhole-effect"></div>
+           </a>
+           <a href="https://tiktok.com/@luxbnb" 
+               target="_blank" 
+               class="social-wormhole"
+               aria-label="TikTok Vortex">
+            <i class="fab fa-tiktok"></i>
+           <div class="wormhole-effect"></div>
+           </a>
           </div>
         </div>
-    
-        <!-- Quantum Links -->
         <div class="nexus-portal">
-          <div class="portal-ring">
-            <a href="#" class="nexus-link" data-portal="ar">🌌 AR Catalog</a>
-            <a href="#" class="nexus-link" data-portal="meta">🕶️ MetaLounge</a>
-            <a href="#" class="nexus-link" data-portal="neuro">🧠 Neuro-Booking</a>
-          </div>
           <div class="portal-core">
             <div class="singularity-logo"></div>
           </div>
         </div>
       </div>
-    
-      <!-- Cyber-Legal Stream -->
       <div class="data-stream-footer">
         <div class="legal-glitch">
           <span class="disclaimer-fragment">Lux-BNB exists across 8 dimensions</span>
           <span class="disclaimer-fragment">Terms apply to your native reality</span>
-          <span class="disclaimer-fragment">© 2023-3023 Lux Hospitality Singularity</span>
+          <span class="disclaimer-fragment">© 2025>>> Lux Hospitality Singularity</span>
         </div>
       </div>
     </footer>
