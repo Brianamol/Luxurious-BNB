@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="HandheldFriendly" content="true" />
+    <title>Lux-BNB | Luxury Vacation Rentals</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav class="nav-section">
+      <div class="nav-container">
+        <div class="logo">
+          <img src="images/Lux_BnB_logo_transparent.png" alt="Lux-BNB" />
+        </div>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#listings">Listings</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <section id="home" class="hero-section">
+      <div class="hero-content">
+        <h1 class="hero-title">Discover Kenyan Luxury Retreats</h1>
+        <div class="search-container">
+          <div class="search-bar">
+            <div class="search-input">
+              <select id="location" class="search-select">
+                <option value="">Select Location</option>
+                <option>Nairobi</option>
+                <option>Mombasa</option>
+                <option>Malindi</option>
+                <option>Diani</option>
+                <option>Naivasha</option>
+                <option>Watamu</option>
+              </select>
+              <select id="property-type" class="search-select">
+                <option value="">Property Type</option>
+                <option>Beach Villa</option>
+                <option>Mountain Cabin</option>
+                <option>City Apartment</option>
+                <option>Safari Lodge</option>
+                <option>Private Island</option>
+              </select>
+              <button class="search-icon"><i class="fas fa-search"></i></button>
+            </div>
+          </div>
+        </div>
+        <div class="stats-bar">
+          <div class="stat-item">24/7 Concierge</div>
+          <div class="stat-item">1000+ Kenyan Properties</div>
+          <div class="stat-item">1M+ Guests Served</div>
+        </div>
+      </div>
+    </section>
+    <section id="listings" class="listings-section">
+      <h2 class="section-title">Featured Property Types</h2>
+      <div class="property-types-grid">
+        <!-- Beach Villas Card -->
+        <div
+          class="property-card"
+          data-type="beach"
+          data-images="images/umbrella-chair-around-beautiful-luxury-swimming-pool.jpg, images/swimming-pool.jpg, images/luxury-holiday-home.jpg, images/rocks-restaurant-beach-low-tide-pingwe-zanzibar-tanzania.jpg"
+        >
+          <div class="property-images"></div>
+          <div class="property-info">
+            <h3>Beachfront Villas</h3>
+            <p>Luxury coastal living</p>
+          </div>
+        </div>
+
+        <!-- Safari Lodges Card -->
+        <div
+          class="property-card"
+          data-type="safari"
+          data-images="images/safari1.webp,images/safari2.webp,images/safari3.webp,images/safari4.webp"
+        >
+          <div class="property-images"></div>
+          <div class="property-info">
+            <h3>Safari Lodges</h3>
+            <p>Wilderness experiences</p>
+          </div>
+        </div>
+
+        <!-- Urban Apartments Card -->
+        <div
+          class="property-card"
+          data-type="urban"
+          data-images="images/urban1.jpg,images/urban2.jpg,images/urban3.jpg"
+        >
+          <div class="property-images"></div>
+          <div class="property-info">
+            <h3>Urban Residences</h3>
+            <p>City center luxury</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="services" class="experiences-section">
+      <div class="experiences-header">
+        <h2>Beyond Accommodation <span class="luxury-underline">Curated Luxury</span></h2>
+        <p class="section-subtitle">Where African Opulence Meets Modern Indulgence</p>
+      </div>
+      <div class="experience-grid">
+        <!-- Floating Safari Card -->
+        <div class="experience-card safari-card">
+          <div class="card-hoverlayer"></div>
+          <div class="card-content">
+            <h3>Floating Wilderness</h3>
+            <div class="card-details">
+              <p>Private glass-walled suites suspended above the Maasai Mara</p>
+              <ul class="luxury-tags">
+                <li>Helicopter Transfers</li>
+                <li>Sunrise Balloon Safaris</li>
+                <li>Butler Service</li>
+              </ul>
+            </div>
+            <button class="cta-pulse">
+              <span>From $2,500/night</span>
+              <i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+        <!-- Urban Oasis Card -->
+        <div class="experience-card urban-card">
+          <div class="card-hoverlayer"></div>
+          <div class="card-content">
+            <h3>Nairobi Sky Sanctums</h3>
+            <div class="card-details">
+              <p>Penthouse collection with private art curator access</p>
+              <ul class="luxury-tags">
+                <li>Rooftop Infinity Pools</li>
+                <li>Michelin Chef Pop-ups</li>
+                <li>VR City Tours</li>
+              </ul>
+            </div>
+            <button class="cta-pulse">
+              <span>From $1,800/night</span>
+              <i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+        <!-- Coastal Chroma Card -->
+        <div class="experience-card coastal-card">
+          <div class="card-hoverlayer"></div>
+          <div class="card-content">
+            <h3>Coral Canvas Villas</h3>
+            <div class="div class="card-details">
+              <p>Tide-responsive lighting systems in Swahili-inspired beach estates</p>
+              <ul class="luxury-tags">
+                <li>Submarine Wine Cellars</li>
+                <li>Coral Regeneration Labs</li>
+                <li>Sandbank Cinema</li>
+              </ul>
+            </div>
+            <button class="cta-pulse">
+              <span>From $3,200/night</span>
+              <i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    
+      <div class="experience-footer">
+        <div class="innovation-badge">
+          <i class="fas fa-gem"></i>
+          <span>Pioneering African Hospitality Since 2025</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials-section">
+      <div class="testimony-portal">
+        <div class="hologram-container">
+          <!-- Holographic Projection Effect -->
+          <div class="hologram-grid">
+            <!-- Testimonial 1 - Floating Safari Review -->
+            <div class="hologram-card" data-sentiment="ecstatic">
+              <div class="hologram-header">
+                <div class="guest-avatar" style="background-image: url('images/safari-guest.jpg')"></div>
+                <div class="emotion-sparkles"></div>
+              </div>
+              <div class="hologram-content">
+                <h4>"The Floating Suite Redefined Wildlife Observation"</h4>
+                <p class="testimony-body">
+                  <span class="text-glitch">Watching rhinos graze beneath our glass floor while sipping</span>
+                  <span class="hologram-highlight">Dom Pérignon Plénitude 2</span> 
+                  <span class="text-glitch">was... transcendental</span>
+                </p>
+                <div class="signature-field">
+                  <span class="guest-name">Amara K.</span>
+                  <span class="geo-tag">From Dubai</span>
+                  <span class="verification-badge"><i class="fas fa-atom"></i> Verified Experience</span>
+                </div>
+              </div>
+              <div class="ambient-video" data-location="masai-mara"></div>
+            </div>
+            <!-- Testimonial 2 - Neural Network Generated Praise -->
+            <div class="hologram-card" data-sentiment="awe">
+              <div class="hologram-header">
+                <div class="neural-avatar">
+                  <div class="ai-face"></div>
+                </div>
+                <div class="emotion-sparkles"></div>
+              </div>
+              <div class="hologram-content">
+                <h4>"Our AI Calculated 103.8% Satisfaction"</h4>
+                <p class="testimony-body">
+                  <span class="algorithm-output" data-model="gpt-5-lux">Parameters exceeded: Comfort (×2.1), Exclusivity (×3.4), MemoryDensity (∞)</span>
+                </p>
+                <div class="signature-field">
+                  <span class="guest-name">LuxCore AI</span>
+                  <span class="geo-tag">Quantum Analysis</span>
+                  <span class="verification-badge"><i class="fas fa-microchip"></i> Neural Verification</span>
+                </div>
+              </div>
+              <div class="data-stream"></div>
+            </div>
+          </div>
+        </div>
+        <!-- Hologram Controls -->
+        <div class="hologram-interface">
+          <div class="neuro-slider">
+            <div class="slider-handle"></div>
+          </div>
+          <div class="emotion-filters">
+            <button class="filter-btn" data-emotion="ecstatic">😍 Ecstatic</button>
+            <button class="filter-btn" data-emotion="awe">🤯 Awestruck</button>
+            <button class="filter-btn" data-emotion="nostalgic">🥺 Nostalgic</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer id="contact" class="footer-section">
+      <div class="cyber-gateway">
+        <!-- Holographic Social Matrix -->
+        <div class="social-matrix">
+          
+          <!-- Instagram Quantum Feed -->
+          <div class="hologram-column instagram-realm">
+            <div class="hologram-header">
+              <i class="fas fa-infinity"></i>
+              <h3>LUX-INSTA<span class="protocol">//v.quantum</span></h3>
+            </div>
+            <div class="feed-portal" data-user="luxbnb">
+              <div class="post-hologram" data-post="1">
+                <div class="hologram-content" style="background-image: url('images/instagram-post1.jpg')">
+                  <div class="engagement-pulse">
+                    <span class="likes-glitch">2.4M</span>
+                    <div class="pulse-ring"></div>
+                  </div>
+                </div>
+                <div class="post-caption">Sundown ceremony at our Malindi Coral Palace<span class="location-tag">#KenyanLuxury</span></div>
+              </div>
+              <div class="post-carousel-controls">
+                <button class="holo-btn time-travel-prev"><i class="fas fa-chevron-left"></i></button>
+                <div class="time-index">POST 5/8 <span class="timecode">[21.04.3023]</span></div>
+                <button class="holo-btn time-travel-next"><i class="fas fa-chevron-right"></i></button>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Twitter Neural Stream -->
+          <div class="hologram-column twitter-realm">
+            <div class="hologram-header">
+              <i class="fas fa-brain"></i>
+              <h3>LUX-TWIT<span class="protocol">//neural</span></h3>
+            </div>
+            <div class="neuro-feed" data-hashtag="#luxurytravel">
+              <div class="tweet-particle">
+                <div class="avatar-matrix" style="background-image: url('images/user1.jpg')"></div>
+                <div class="tweet-hologram">
+                  <p class="tweet-content">Just experienced the <span class="glow-word">Maasai Mara Sky Suite</span> - literally sleeping above lions! <span class="hashtag-pulse">#LuxuryRedefined</span></p>
+                  <div class="neuro-engagement">
+                    <span class="retweet-flare">♺ 42K</span>
+                    <span class="like-pulse">♥ 198K</span>
+                  </div>
+                </div>
+              </div>
+              <div class="tweet-orbit-controls">
+                <div class="sentiment-graph"></div>
+                <div class="emotion-filter">
+                  <span class="filter-option active" data-emotion="awe">🤯 AWE</span>
+                  <span class="filter-option" data-emotion="desire">💎 DESIRE</span>
+                  <span class="filter-option" data-emotion="envy">🟢 ENVY</span>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Crypto-Luxury Exchange -->
+          <div class="hologram-column crypto-realm">
+            <div class="hologram-header">
+              <i class="fas fa-coins"></i>
+              <h3>LUX-COIN<span class="protocol">//blockchain</span></h3>
+            </div>
+            <div class="crypto-ticker">
+              <div class="coin-flare">
+                <span class="coin-name">LUXB</span>
+                <span class="coin-value">$452.18</span>
+                <div class="value-stream"></div>
+              </div>
+              <div class="nft-gallery">
+                <div class="nft-card" data-nft="maasai-sunset">
+                  <div class="nft-preview"></div>
+                  <span class="nft-price">2.5 ETH</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <!-- Digital Concierge -->
+        <div class="concierge-hologram">
+          <div class="ai-avatar"></div>
+          <div class="concierge-interface">
+            <div class="neuro-input">
+              <input type="text" placeholder="Request the impossible..." class="desire-input">
+              <button class="quantum-send"><i class="fas fa-paper-plane"></i></button>
+            </div>
+            <div class="personality-selector">
+              <span class="personality-option" data-ai="shaman">🎭 Digital Shaman</span>
+              <span class="personality-option" data-ai="butler">🤖 Art Deco Butler</span>
+              <span class="personality-option" data-ai="philosopher">🦉 Existential Guide</span>
+            </div>
+          </div>
+        </div>
+    
+        <!-- Quantum Links -->
+        <div class="nexus-portal">
+          <div class="portal-ring">
+            <a href="#" class="nexus-link" data-portal="ar">🌌 AR Catalog</a>
+            <a href="#" class="nexus-link" data-portal="meta">🕶️ MetaLounge</a>
+            <a href="#" class="nexus-link" data-portal="neuro">🧠 Neuro-Booking</a>
+          </div>
+          <div class="portal-core">
+            <div class="singularity-logo"></div>
+          </div>
+        </div>
+      </div>
+    
+      <!-- Cyber-Legal Stream -->
+      <div class="data-stream-footer">
+        <div class="legal-glitch">
+          <span class="disclaimer-fragment">Lux-BNB exists across 8 dimensions</span>
+          <span class="disclaimer-fragment">Terms apply to your native reality</span>
+          <span class="disclaimer-fragment">© 2023-3023 Lux Hospitality Singularity</span>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
